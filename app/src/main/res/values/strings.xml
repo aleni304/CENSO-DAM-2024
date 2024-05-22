@@ -7,4 +7,9 @@
     <string name="textView_clave">Clave:</string>
     <string name="textView_telefono">Teléfono:</string>
     <string name="textView_fecha">Fecha:</string>
+    <string name="hora_nacimiento">Hora de nacimiento</string>
+    <string name="zona_residencia">Zona de residencia</string>
+    <string name="urbano">Urbano</string>
+    <string name="Rural">Rural</string>
+    <string name="cantidad_personas">¿Cuántas personas viven en la vivienda?</string>
 </resources>
