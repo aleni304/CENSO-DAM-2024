@@ -12,4 +12,15 @@
     <string name="urbano">Urbano</string>
     <string name="Rural">Rural</string>
     <string name="cantidad_personas">¿Cuántas personas viven en la vivienda?</string>
+    <string name="textviewIngreso">Ingreso promedio de familia:</string>
+    <string name="numberdecimalIngreso" />
+    <string name="textviewOpinion">¿Qué opina sobre los bonos otorgados por el gobierno?</string>
+    <string name="textmultilineOpinion" />
+    <string name="textviewMascotas">Mascotas que viven en casa:</string>
+    <string name="checkboxPerro">Perro</string>
+    <string name="checkboxGato">Gato</string>
+    <string name="checkboxPollo">Pollo</string>
+    <string name="checkboxPato">Pato</string>
+    <string name="checkboxOtros">Otros</string>
+    <string name="buttonEnviar">Enviar</string>
 </resources>

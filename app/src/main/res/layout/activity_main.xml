@@ -279,6 +279,136 @@
                 app:layout_constraintStart_toEndOf="@+id/textView4"
                 app:layout_constraintTop_toTopOf="@+id/textView4" />
 
+            <TextView
+                android:id="@+id/textViewIngreso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/manrope"
+                android:text="@string/textviewIngreso"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <EditText
+                android:id="@+id/editTextDecimalIngreso"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="@string/numberdecimalIngreso"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewIngreso"
+                app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+                app:layout_constraintStart_toEndOf="@+id/textViewIngreso"
+                app:layout_constraintTop_toTopOf="@+id/textViewIngreso" />
+
+            <TextView
+                android:id="@+id/textViewOpinion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/manrope"
+                android:text="@string/textviewOpinion"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewIngreso"
+                app:layout_constraintTop_toBottomOf="@+id/textViewIngreso" />
+
+            <EditText
+                android:id="@+id/TextMultiLineOpinion"
+                android:layout_width="310dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="@string/textmultilineOpinion"
+                app:layout_constraintStart_toStartOf="@+id/textViewOpinion"
+                app:layout_constraintTop_toBottomOf="@+id/textViewOpinion" />
+
+            <TextView
+                android:id="@+id/textViewMascotas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/manrope"
+                android:text="@string/textviewMascotas"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/TextMultiLineOpinion"
+                app:layout_constraintTop_toBottomOf="@+id/TextMultiLineOpinion" />
+
+            <CheckBox
+                android:id="@+id/checkBoxPerro"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/checkboxPerro"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewMascotas"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMascotas" />
+
+            <CheckBox
+                android:id="@+id/checkBoxGato"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/checkboxGato"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBoxPerro"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxPerro"
+                app:layout_constraintTop_toTopOf="@+id/checkBoxPerro" />
+
+            <CheckBox
+                android:id="@+id/checkBoxPollo"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/checkboxPollo"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBoxGato"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxGato"
+                app:layout_constraintTop_toTopOf="@+id/checkBoxGato" />
+
+            <CheckBox
+                android:id="@+id/checkBoxPato"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/checkboxPato"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBoxPollo"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxPollo"
+                app:layout_constraintTop_toTopOf="@+id/checkBoxPollo" />
+
+            <CheckBox
+                android:id="@+id/checkBoxOtro"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/checkboxOtros"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBoxPato"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxPato"
+                app:layout_constraintTop_toTopOf="@+id/checkBoxPato" />
+
+            <Button
+                android:id="@+id/buttonEnviar"
+                android:layout_width="114dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#0487D9"
+                android:drawableLeft="@drawable/baseline_send_24"
+                android:text="@string/buttonEnviar"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxPollo" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
