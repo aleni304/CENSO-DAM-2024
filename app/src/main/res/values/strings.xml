@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DAMEP_GERSONSAHUMA</string>
+    <string name="textoApellidosNombre">Apellidos y nombre:</string>
+    <string name="PlainText_Apellidos_Nombre">Apellidos y nombre</string>
+    <string name="textView_Correo">Correo</string>
+    <string name="text_view_Correo">Correo:</string>
+    <string name="textView_clave">Clave:</string>
+    <string name="textView_telefono">Teléfono:</string>
+    <string name="textView_fecha">Fecha:</string>
+</resources>

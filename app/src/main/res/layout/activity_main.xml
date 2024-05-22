@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo1"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/fondo2"
+        app:cardCornerRadius="12dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="180dp" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Formulario del Censo 2024"
+                android:textColor="#F2F2F2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/id_apellidosNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/textoApellidosNombre"
+                android:textColor="#F2F2F2"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:layout_editor_absoluteX="27dp" />
+
+            <TextView
+                android:id="@+id/id_correo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="@string/text_view_Correo"
+                android:textColor="#F2F2F2"
+                app:layout_constraintStart_toStartOf="@+id/id_apellidosNombre"
+                app:layout_constraintTop_toBottomOf="@+id/id_apellidosNombre" />
+
+            <EditText
+                android:id="@+id/PlainText_ApellidosNombre"
+                android:layout_width="182dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="18dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toEndOf="@+id/id_apellidosNombre"
+                tools:layout_editor_absoluteY="58dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="15dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toEndOf="@+id/id_correo"
+                tools:layout_editor_absoluteY="112dp" />
+
+            <TextView
+                android:id="@+id/id_clave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/textView_clave"
+                android:textColor="#F2F2F2"
+                app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+                tools:layout_editor_absoluteY="120dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                app:layout_constraintStart_toEndOf="@+id/id_clave"
+                tools:layout_editor_absoluteY="112dp" />
+
+            <TextView
+                android:id="@+id/id_telefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="@string/textView_telefono"
+                android:textColor="#F2F2F2"
+                app:layout_constraintTop_toBottomOf="@+id/id_correo"
+                tools:layout_editor_absoluteX="25dp" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="98dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+                app:layout_constraintStart_toEndOf="@+id/id_telefono"
+                tools:layout_editor_absoluteY="163dp" />
+
+            <TextView
+                android:id="@+id/id_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/textView_fecha"
+                android:textColor="#F2F2F2"
+                app:layout_constraintStart_toEndOf="@+id/editTextPhone"
+                tools:layout_editor_absoluteY="174dp" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="date"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+                app:layout_constraintStart_toEndOf="@+id/id_fecha"
+                tools:layout_editor_absoluteY="163dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
